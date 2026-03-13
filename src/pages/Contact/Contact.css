@@ -15,17 +15,15 @@
 }
 
 .contact-title-wrap {
-  max-width: 980px;
+  max-width: 100%;
 }
 
 .contact-title {
   margin: 0;
-  font-family: "Instrument Serif", serif;
-  font-size: 60px;
-  /* line-height: 0.95;
-  letter-spacing: -0.03em; */
+  font-family: "Instrument Serif", sans-serif;
+  font-size: 80px;
   font-weight: 400;
-  text-transform: uppercase;
+  line-height: 80px;
 }
 
 /* .contact-badge {
@@ -60,10 +58,15 @@
 }
 
 .contact-label {
-  margin: 0 0 18px;
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  margin: 0 0 10px;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.contact-form-block p {
+  margin-bottom: 18px;
+  text-align: center;
 }
 
 .contact-form {
@@ -88,8 +91,8 @@
 
 .contact-form textarea {
   border-radius: 34px;
+  height: 60px;
   resize: none;
-  min-height: 120px;
 }
 
 .contact-form input::placeholder,
@@ -117,7 +120,7 @@
 }
 
 .contact-calendar-btn {
-  min-width: 160px;
+  width: 160px;
 }
 
 .contact-send-btn:hover,
@@ -129,23 +132,21 @@
 .contact-info-block {
   display: flex;
   flex-direction: column;
-  gap: 59px;
-  padding-top: 2px;
+  justify-content: space-between;
+  height: 340px;
+  /* gap: 25px; */
 }
 
 .contact-info-item {
   display: flex;
   flex-direction: column;
-  gap: 8px;
 }
 
 .contact-email {
   text-decoration: none;
   color: #e66cae;
-  font-size: clamp(26px, 3vw, 42px);
+  font-size: 26px;
   font-family: "Geist Mono", monospace;
-  line-height: 1.2;
-  word-break: break-word;
 }
 
 .contact-phone {

@@ -104,9 +104,9 @@ function Work() {
             </div>
           </div>
         </div>
-        <div className="more-projects-container">
+        {/* <div className="more-projects-container">
           <button className="more-projects-btn">more projects</button>
-        </div>
+        </div> */}
       </section>
 
       <section className="story-section container">
@@ -156,7 +156,7 @@ function Work() {
           <img src="/images/team.png" alt="team" />
         </div>
       </section>
-      <section className="services-section container">
+      {/* <section className="services-section container">
         <p className="services-label">our story</p>
 
         <h2 className="services-title">CREATIVE SERVICES</h2>
@@ -167,7 +167,7 @@ function Work() {
           Thoughtful design solutions crafted to bring ideas to life — blending
           creativity, clarity, and visual impact.
         </p>
-      </section>
+      </section> */}
 
       <Footer />
     </>

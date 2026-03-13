@@ -19,7 +19,7 @@ function Footer() {
         {/* RIGHT SIDE */}
         <div className="footer-right">
           <div className="footer-column">
-            <div className="footer-title">[CONTACTS]</div>
+            <div className="footer-title">CONTACTS</div>
 
             <a href="mailto:fluxed.agency@gmail.com">fluxed.agency@gmail</a>
 
@@ -27,7 +27,7 @@ function Footer() {
           </div>
 
           <div className="footer-column">
-            <div className="footer-title">[SOCIALS]</div>
+            <div className="footer-title">SOCIALS</div>
 
             <div className="footer-socials">
               <a href="#">instagram</a>

@@ -2,6 +2,7 @@
   font-family: "Geist Mono", monospace;
   font-size: 18px;
   margin-top: 40px;
+  font-weight: 400;
 }
 
 .work {
@@ -51,13 +52,18 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-family: "Instrument Sans", serif;
-  font-weight: bold;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
   border-bottom: 1px solid #bfbfbf;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .work-info p {
   width: 70%;
-  font-family: "Instrument Sans", serif;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .work-card:hover img {
@@ -102,14 +108,17 @@
 }
 
 .story-label {
+  font-family: "Geist Mono", monospace;
   font-size: 18px;
+  font-weight: 400;
   margin-bottom: 20px;
 }
 
 .story-title {
-  font-family: "Instrument Serif", serif;
-  font-size: 80px;
+  font-family: "Instrument Serif", sans-serif;
+  font-size: 120px;
   margin-bottom: 60px;
+  font-weight: 400;
 }
 
 .story-list {
@@ -129,16 +138,20 @@
   justify-content: space-between;
   padding-bottom: 10px;
   border-bottom: 1px solid #d0d0d0;
-  font-size: 14px;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .story-item p {
-  font-size: 26px;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 32px;
   line-height: 1.4;
 }
 
 .cta-section {
   margin-top: 140px;
+  margin-bottom: 30px;
 }
 
 .cta-top {
@@ -149,8 +162,9 @@
 }
 
 .cta-title {
-  font-family: "Instrument Serif", serif;
-  font-size: 90px;
+  font-family: "Instrument Serif", sans-serif;
+  font-size: 120px;
+  font-weight: normal;
 }
 
 .cta-btn {
@@ -185,7 +199,7 @@
   /* object-fit: cover; */
 }
 
-.services-section {
+/* .services-section {
   padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
@@ -214,4 +228,4 @@
   font-size: 28px;
   line-height: 1.6;
   max-width: 600px;
-}
+} */

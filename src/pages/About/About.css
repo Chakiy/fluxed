@@ -1,11 +1,15 @@
 .about-title {
-  font-family: "Instrument Serif";
-  font-size: 64px;
+  font-family: "Instrument Serif", sans-serif;
+  font-size: 120px;
+  font-weight: 400;
 }
 
 .about-description {
   margin-top: 20px;
   max-width: 600px;
+  font-family: "Instrument Sans", sans-serif;
+
+  font-size: 32px;
 }
 
 /* Horizontal scroll section */
@@ -69,5 +73,13 @@
   border-bottom: 1px solid #aaa;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  font-family: "Geist Mono", monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.hover-info p {
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 12px;
   font-weight: 500;
 }

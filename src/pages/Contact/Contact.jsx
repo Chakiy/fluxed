@@ -20,14 +20,14 @@ function Contact() {
 
         <div className="contact-content">
           <div className="contact-form-block">
-            <p className="contact-label">
+            <p className="contact-label center">
               HAVE A PROJECT IN MIND OR A QUESTION?
             </p>
 
             <form className="contact-form">
               <input type="text" placeholder="Name" />
               <input type="email" placeholder="Email" />
-              <textarea placeholder="Text" rows="4"></textarea>
+              <textarea placeholder="Text"></textarea>
 
               <button type="submit" className="contact-send-btn">
                 Send
@@ -55,7 +55,7 @@ function Contact() {
 
             <div className="contact-info-item">
               <p className="contact-label">BOOK A CALL</p>
-              <button className="contact-calendar-btn">calendar</button>
+              <button className="contact-calendar-btn">Calendar</button>
             </div>
           </div>
         </div>
