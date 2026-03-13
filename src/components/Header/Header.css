@@ -1,0 +1,36 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 40px;
+  background: #fffcee;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 252, 238, 0) 0%,
+    rgba(255, 252, 238, 1) 27%
+  );
+  font-family: "Geist Mono", monospace;
+  font-size: 15px;
+  z-index: 20;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a:hover {
+  color: #fc60a8;
+}
+
+/* ACTIVE PAGE */
+nav a.active,
+.logo.active {
+  color: #fc60a8; /* rose color */
+}

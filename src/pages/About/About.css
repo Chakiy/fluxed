@@ -1,0 +1,73 @@
+.about-title {
+  font-family: "Instrument Serif";
+  font-size: 64px;
+}
+
+.about-description {
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+/* Horizontal scroll section */
+
+.horizontal-section {
+  height: 300vh;
+  position: relative;
+}
+
+.sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image-track {
+  display: flex;
+  gap: 30px;
+}
+.image-card {
+  position: relative;
+  width: 500px;
+  height: 620px;
+  flex-shrink: 0;
+}
+
+.image-track img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fffcee;
+  transition: 0.4s ease;
+  opacity: 0;
+}
+
+.image-card:hover .hover-info {
+  opacity: 1;
+}
+.image-card:hover img {
+  opacity: 0;
+}
+.image-card:hover {
+  cursor:
+    url("/images/cursor.png") 6 6,
+    auto;
+}
+
+.hover-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
