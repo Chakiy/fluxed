@@ -1,7 +1,7 @@
 import Footer from "../../components/Footer/Footer";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import "./about.css";
+import "./About.css";
 
 function About() {
   const targetRef = useRef(null);
