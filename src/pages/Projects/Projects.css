@@ -95,7 +95,9 @@
   background: #ddd;
   display: block;
   text-decoration: none;
-  cursor: pointer;
+  cursor:
+    url("/images/cursor.png") 12 12,
+    auto;
 }
 
 .project-image {

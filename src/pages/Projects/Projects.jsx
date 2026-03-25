@@ -1,62 +1,12 @@
-import Footer from "../../components/Footer/Footer";
 import "./Projects.css";
 import { Link } from "react-router-dom";
-
-const projects = [
-  {
-    id: 1,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 2,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 3,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 4,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 5,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 6,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-];
+import projectsData from "../../data/projectsData";
+import Footer from "../../components/Footer/Footer";
 
 function Projects() {
   return (
     <>
-      <section className="container projects-section">
+      <section className=" container projects-section">
         <div className="projects-header">
           <h2 className="projects-title">OUR PROJECTS</h2>
 
@@ -66,7 +16,7 @@ function Projects() {
         </div>
 
         <div className="projects-grid">
-          {projects.map((project) => (
+          {projectsData.map((project) => (
             <article className="project-card" key={project.id}>
               <div className="project-top">
                 <span className="project-name">{project.title}</span>
@@ -75,7 +25,10 @@ function Projects() {
 
               <p className="project-description">{project.description}</p>
 
-              <Link to="/project" className="project-image-wrap">
+              <Link
+                to={`/project/${project.id}`}
+                className="project-image-wrap"
+              >
                 <img
                   src={project.image}
                   alt={project.title}

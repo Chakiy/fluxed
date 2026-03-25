@@ -1,44 +1,26 @@
 import Footer from "../../components/Footer/Footer";
 import "./Project.css";
-
-const galleryImages = [
-  "/images/summer.png",
-  "/images/summer.png",
-  "/images/summer.png",
-  "/images/summer.png",
-  "/images/summer.png",
-  "/images/summer.png",
-  "/images/summer.png",
-];
-
-const otherProjects = [
-  {
-    id: 1,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 2,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-  {
-    id: 3,
-    title: "SUMMER RING",
-    material: "SILVER 925",
-    description:
-      "A ring that always brings back memories of warm days and late breakfasts with those you love.",
-    image: "/images/summer.png",
-  },
-];
+import { useParams, Link } from "react-router-dom";
+import projectsData from "../../data/projectsData";
 
 function Project() {
+  const { id } = useParams();
+
+  const project = projectsData.find((item) => item.id === Number(id));
+
+  if (!project) {
+    return (
+      <>
+        <section className="project-page">
+          <h1>Project not found</h1>
+          <Link to="/projects" className="back-link">
+            Back to projects
+          </Link>
+        </section>
+        <Footer />
+      </>
+    );
+  }
   return (
     <>
       <section className="container project-section">
@@ -65,32 +47,32 @@ function Project() {
 
           <div className="project-gallery">
             <div className="gallery-item gallery-item-large">
-              <img src={galleryImages[0]} alt="Project main visual" />
+              <img src={project.image} alt="Project main visual" />
             </div>
 
             <div className="gallery-row gallery-row-two">
               <div className="gallery-item">
-                <img src={galleryImages[1]} alt="Project visual 1" />
+                <img src={project.image} alt="Project visual 1" />
               </div>
               <div className="gallery-item">
-                <img src={galleryImages[2]} alt="Project visual 2" />
+                <img src={project.image} alt="Project visual 2" />
               </div>
             </div>
 
             <div className="gallery-row gallery-row-three">
               <div className="gallery-item">
-                <img src={galleryImages[3]} alt="Project visual 3" />
+                <img src={project.image} alt="Project visual 3" />
               </div>
               <div className="gallery-item">
-                <img src={galleryImages[4]} alt="Project visual 4" />
+                <img src={project.image} alt="Project visual 4" />
               </div>
               <div className="gallery-item">
-                <img src={galleryImages[5]} alt="Project visual 5" />
+                <img src={project.image} alt="Project visual 5" />
               </div>
             </div>
 
             <div className="gallery-item gallery-item-bottom">
-              <img src={galleryImages[6]} alt="Project bottom visual" />
+              <img src={project.image} alt="Project bottom visual" />
             </div>
           </div>
 
@@ -110,20 +92,42 @@ function Project() {
             <h3>other projects</h3>
 
             <div className="other-projects-grid">
-              {otherProjects.map((project) => (
-                <article className="other-project-card" key={project.id}>
-                  <div className="other-project-card-top">
-                    <span>{project.title}</span>
-                    <span>{project.material}</span>
-                  </div>
+              <article className="other-project-card" key={project.id}>
+                <div className="other-project-card-top">
+                  <span>{project.title}</span>
+                  <span>{project.material}</span>
+                </div>
 
-                  <p>{project.description}</p>
+                <p>{project.description}</p>
 
-                  <div className="other-project-image">
-                    <img src={project.image} alt={project.title} />
-                  </div>
-                </article>
-              ))}
+                <div className="other-project-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
+              </article>
+              <article className="other-project-card" key={project.id}>
+                <div className="other-project-card-top">
+                  <span>{project.title}</span>
+                  <span>{project.material}</span>
+                </div>
+
+                <p>{project.description}</p>
+
+                <div className="other-project-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
+              </article>
+              <article className="other-project-card" key={project.id}>
+                <div className="other-project-card-top">
+                  <span>{project.title}</span>
+                  <span>{project.material}</span>
+                </div>
+
+                <p>{project.description}</p>
+
+                <div className="other-project-image">
+                  <img src={project.image} alt={project.title} />
+                </div>
+              </article>
             </div>
           </div>
         </div>
