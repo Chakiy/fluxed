@@ -1,4 +1,4 @@
-import "./blog.css";
+import "./Blog.css";
 import Footer from "../../components/Footer/Footer";
 
 const blogPosts = [
