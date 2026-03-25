@@ -3,7 +3,7 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <div className="container footer-container">
+      <div className="footer-container">
         {/* LEFT SIDE */}
         <div className="footer-left">
           <div className="footer-logo">

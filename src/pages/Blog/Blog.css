@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+.blog-page {
+  min-height: 100vh;
+  background: #fffcee;
+  color: #2f2f34;
+  margin-top: 120px;
+  font-family: "IBM Plex Mono", monospace;
+  position: relative;
+}
+
+.blog-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 44px;
+}
+
+.blog-home-link,
+.blog-contact-link,
+.blog-nav a,
+.blog-socials a {
+  text-decoration: none;
+  color: #2f2f34;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.blog-socials {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.blog-socials a {
+  font-size: 14px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 16px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card-image-wrap {
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #ddd;
+}
+
+.blog-card-meta {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-card-meta h3,
+.blog-card-meta span {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}

@@ -1,8 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+
 import { Link } from "react-router-dom";
 import "./Work.css";
 
 function Work() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="container work">
@@ -104,9 +107,14 @@ function Work() {
             </div>
           </div>
         </div>
-        {/* <div className="more-projects-container">
-          <button className="more-projects-btn">more projects</button>
-        </div> */}
+        <div className="more-projects-container">
+          <button
+            className="more-projects-btn"
+            onClick={() => navigate("/projects")}
+          >
+            more projects
+          </button>
+        </div>
       </section>
 
       <section className="story-section container">

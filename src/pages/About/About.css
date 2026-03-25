@@ -30,7 +30,7 @@
 
 .image-track {
   display: flex;
-  gap: 30px;
+  gap: 16px;
 }
 .image-card {
   position: relative;

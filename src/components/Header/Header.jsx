@@ -12,7 +12,10 @@ function Header() {
         <nav>
           <NavLink to="/work">work</NavLink>
           <NavLink to="/about">about</NavLink>
-          <NavLink to="/contact">contact</NavLink>
+          <NavLink to="/blog">blog</NavLink>
+          <NavLink to="/contact" className="contact">
+            contact
+          </NavLink>
         </nav>
       </div>
     </header>

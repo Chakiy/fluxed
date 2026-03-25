@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 25px 40px;
+  padding: 25px 20px;
   background: #fffcee;
   background: linear-gradient(
     360deg,
@@ -10,9 +10,9 @@
     rgba(255, 252, 238, 1) 27%
   );
   font-family: "Geist Mono", monospace;
-  font-size: 18px;
-  font-weight: 400;
-  letter-spacing: normal;
+  font-size: 15px;
+  font-weight: medium;
+  color: #3e3e3e;
   z-index: 20;
 }
 
@@ -20,6 +20,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.contact {
+  padding-left: 130px;
 }
 
 nav {
