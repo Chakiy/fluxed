@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer/Footer";
-import "./projects.css";
+import "./Projects.css";
 import { Link } from "react-router-dom";
 
 const projects = [
