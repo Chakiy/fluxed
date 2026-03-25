@@ -1,5 +1,5 @@
 import Footer from "../../components/Footer/Footer";
-import "./project.css";
+import "./Project.css";
 
 const galleryImages = [
   "/images/summer.png",
