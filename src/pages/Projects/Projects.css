@@ -16,10 +16,8 @@
 .projects-title {
   margin: 0;
   font-family: "Instrument Serif", serif;
-  font-size: clamp(56px, 8vw, 110px);
-  line-height: 0.9;
+  font-size: 60px;
   font-weight: 400;
-  letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #3f3f41;
 }
@@ -28,16 +26,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 310px;
-  height: 98px;
-  padding: 0 40px;
+  padding: 22px 60px;
   border-radius: 999px;
   background: #3f3f41;
   color: #f6f3e8;
   text-decoration: none;
   font-family: "Instrument Serif", serif;
-  font-size: 28px;
-  line-height: 1;
+  font-size: 18px;
+  font-weight: 400;
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
@@ -71,21 +67,19 @@
 .project-name,
 .project-material {
   font-family: "Geist Mono", monospace;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: #5a5a58;
+  font-size: 9px;
+  font-weight: 572;
+  color: #3e3e3e;
   text-transform: uppercase;
 }
 
 .project-description {
   margin: 0 0 18px;
   max-width: 95%;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  line-height: 1.45;
-  font-weight: 600;
-  color: #4b4b49;
+  font-family: "Instrument Sans", sans-serif;
+  font-size: 9px;
+  font-weight: 572;
+  color: #3e3e3e;
 }
 
 .project-image-wrap {

@@ -21,20 +21,18 @@
   display: flex;
   gap: 36px;
   font-family: "Geist Mono", monospace;
-  font-size: 14px;
-  font-weight: 500;
-  color: #414141;
-  letter-spacing: 0.04em;
+  font-size: 9px;
+  font-weight: 572;
+  color: #3e3e3e;
   padding-top: 58px;
 }
 
 .project-header h1 {
   margin: 0;
   font-family: "Instrument Serif", serif;
-  font-size: clamp(58px, 7vw, 100px);
-  line-height: 0.95;
+  font-size: 60px;
   font-weight: 400;
-  color: #373737;
+  color: #3e3e3e;
 }
 
 .project-header-line {
@@ -47,10 +45,10 @@
 .project-header p {
   max-width: 520px;
   margin: 0;
-  font-family: "Geist", sans-serif;
-  font-size: 18px;
-  line-height: 1.45;
-  color: #444;
+  font-family: "Instrument Sans", serif;
+  font-size: 9px;
+  color: #3e3e3e;
+  font-weight: 572;
 }
 
 .project-badge {
@@ -123,10 +121,9 @@
 .project-cta h2 {
   margin: 0;
   font-family: "Instrument Serif", serif;
-  font-size: clamp(48px, 6vw, 96px);
-  line-height: 0.95;
+  font-size: 60px;
   font-weight: 400;
-  color: #373737;
+  color: #3e3e3e;
   max-width: 980px;
 }
 
@@ -137,8 +134,8 @@
   padding: 24px 56px;
   border-radius: 999px;
   font-family: "Instrument Serif", serif;
-  font-size: 24px;
-  line-height: 1;
+  font-size: 18px;
+  font-weight: 400;
   cursor: pointer;
   transition:
     transform 0.3s ease,
@@ -161,9 +158,9 @@
 .other-projects h3 {
   margin: 0 0 42px;
   font-family: "Geist Mono", monospace;
-  font-size: 24px;
-  font-weight: 500;
-  color: #373737;
+  font-size: 18px;
+  font-weight: 470;
+  color: #3e3e3e;
 }
 
 .other-projects-grid {
@@ -180,16 +177,17 @@
   margin-bottom: 12px;
   border-bottom: 1px solid #d3cec3;
   font-family: "Geist Mono", monospace;
-  font-size: 14px;
-  color: #3f3f3f;
+  font-size: 9px;
+  font-weight: 572;
+  color: #3e3e3e;
 }
 
 .other-project-card p {
   margin: 0 0 18px;
-  font-family: "Geist", sans-serif;
-  font-size: 16px;
-  line-height: 1.45;
-  color: #444;
+  font-family: "Instrument Serif", serif;
+  font-weight: 572;
+  font-size: 9px;
+  color: #3e3e3e;
   max-width: 95%;
 }
 

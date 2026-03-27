@@ -47,32 +47,32 @@ function Project() {
 
           <div className="project-gallery">
             <div className="gallery-item gallery-item-large">
-              <img src={project.image} alt="Project main visual" />
+              <img src={project.image[1]} alt="Project main visual" />
             </div>
 
             <div className="gallery-row gallery-row-two">
               <div className="gallery-item">
-                <img src={project.image} alt="Project visual 1" />
+                <img src={project.image[2]} alt="Project visual 1" />
               </div>
               <div className="gallery-item">
-                <img src={project.image} alt="Project visual 2" />
+                <img src={project.image[3]} alt="Project visual 2" />
               </div>
             </div>
 
             <div className="gallery-row gallery-row-three">
               <div className="gallery-item">
-                <img src={project.image} alt="Project visual 3" />
+                <img src={project.image[4]} alt="Project visual 3" />
               </div>
               <div className="gallery-item">
-                <img src={project.image} alt="Project visual 4" />
+                <img src={project.image[5]} alt="Project visual 4" />
               </div>
               <div className="gallery-item">
-                <img src={project.image} alt="Project visual 5" />
+                <img src={project.image[6]} alt="Project visual 5" />
               </div>
             </div>
 
             <div className="gallery-item gallery-item-bottom">
-              <img src={project.image} alt="Project bottom visual" />
+              <img src={project.image[7]} alt="Project bottom visual" />
             </div>
           </div>
 

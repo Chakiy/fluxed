@@ -30,7 +30,7 @@ function Projects() {
                 className="project-image-wrap"
               >
                 <img
-                  src={project.image}
+                  src={project.image[0]}
                   alt={project.title}
                   className="project-image"
                 />

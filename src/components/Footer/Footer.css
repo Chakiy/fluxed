@@ -40,8 +40,10 @@
 .footer-agency {
   display: flex;
   flex-direction: column;
-  line-height: 1.3;
+  font-family: "Geist Mono", monospace;
+  font-size: 9px;
   font-weight: 600;
+  color: #3e3e3e;
 }
 
 .agency-year {
@@ -62,7 +64,10 @@
 }
 
 .footer-title {
+  font-family: "Geist Mono", monospace;
+  font-size: 9px;
   font-weight: 600;
+  color: #3e3e3e;
   margin-bottom: 4px;
 }
 
@@ -70,10 +75,11 @@
 
 .footer-column a {
   font-family: "Instrument Sans", sans-serif;
-  font-size: 12px;
+  font-size: 9px;
   text-decoration: none;
-  color: #222;
-  font-size: 14px;
+  color: #3e3e3e;
+  font-weight: 572;
+  /* line-height: 60; */
 }
 
 .footer-column a:hover {

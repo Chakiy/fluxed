@@ -21,9 +21,10 @@
 .contact-title {
   margin: 0;
   font-family: "Instrument Serif", sans-serif;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 60px;
+  color: #3e3e3e;
 }
 
 /* .contact-badge {
@@ -60,8 +61,9 @@
 .contact-label {
   margin: 0 0 10px;
   font-family: "Geist Mono", monospace;
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 9px;
+  font-weight: 572;
+  color: #3e3e3e;
 }
 
 .contact-form-block p {
@@ -140,21 +142,26 @@
 .contact-info-item {
   display: flex;
   flex-direction: column;
+  font-family: "Geist Mono", monospace;
+  font-size: 9px;
+  font-weight: 572;
+  color: #3e3e3e;
 }
 
 .contact-email {
   text-decoration: none;
   color: #e66cae;
-  font-size: 26px;
+  font-size: 18px;
+  font-weight: 470;
   font-family: "Geist Mono", monospace;
 }
 
 .contact-phone {
   text-decoration: none;
-  color: #2f2f33;
-  font-size: clamp(26px, 3vw, 42px);
+  color: #3e3e3e;
+  font-size: 18px;
   font-family: "Geist Mono", monospace;
-  line-height: 1.2;
+  font-weight: 470;
 }
 
 .contact-email:hover,

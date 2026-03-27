@@ -21,9 +21,10 @@
 .blog-nav a,
 .blog-socials a {
   text-decoration: none;
-  color: #2f2f34;
-  font-size: 18px;
-  line-height: 1;
+  color: #3e3e3e;
+  font-size: 9px;
+  font-family: "Geist Mono", monospace;
+  font-weight: 572;
   text-transform: uppercase;
 }
 
@@ -62,6 +63,10 @@
 }
 
 .blog-card-meta {
+  font-family: "Geist Mono", monospace;
+  font-weight: 572;
+  font-size: 9px;
+  color: #3e3e3e;
   margin-top: 16px;
   display: flex;
   justify-content: space-between;
