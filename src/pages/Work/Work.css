@@ -1,6 +1,6 @@
 .h2 {
   font-family: "Geist Mono", monospace;
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 40px;
   font-weight: 470;
   color: #3e3e3e;
@@ -54,7 +54,7 @@
   justify-content: space-between;
   margin-bottom: 20px;
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
   border-bottom: 1px solid #bfbfbf;
@@ -64,7 +64,7 @@
 .work-info p {
   width: 70%;
   font-family: "Instrument Sans", sans-serif;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: 572;
   color: #3e3e3e;
 }
@@ -96,7 +96,7 @@
   padding: 22px 60px;
   border-radius: 60px;
   font-family: "Instrument Serif", serif;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   cursor: pointer;
   transition: 0.3s;
@@ -113,7 +113,7 @@
 
 .story-label {
   font-family: "Geist Mono", monospace;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 470;
   color: #3e3e3e;
   margin-bottom: 20px;
@@ -121,7 +121,7 @@
 
 .story-title {
   font-family: "Instrument Serif", sans-serif;
-  font-size: 60px;
+  font-size: 90px;
   margin-bottom: 60px;
   font-weight: 400;
   color: #3e3e3e;
@@ -145,14 +145,14 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #d0d0d0;
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
 }
 
 .story-item p {
   font-family: "Instrument Sans", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 1.4;
 }
 
@@ -170,7 +170,7 @@
 
 .cta-title {
   font-family: "Instrument Serif", sans-serif;
-  font-size: 60px;
+  font-size: 90px;
   font-weight: 400;
   color: #3e3e3e;
 }
@@ -182,7 +182,7 @@
   border: none;
   padding: 20px 50px;
   border-radius: 50px;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
   cursor: pointer;
   transition: 0.3s;
@@ -192,15 +192,7 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding: 50px 30px;
-  background: #fc60a8;
-  background: linear-gradient(
-    360deg,
-    rgba(252, 96, 168, 0.15) 0%,
-    rgba(252, 96, 168, 1) 15%,
-    rgba(252, 96, 168, 1) 85%,
-    rgba(252, 96, 168, 0.15) 100%
-  );
+  padding: 50px 20px;
 }
 
 .cta-image img {

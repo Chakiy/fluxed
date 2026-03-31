@@ -4,9 +4,9 @@ import { useParams, Link } from "react-router-dom";
 import projectsData from "../../data/projectsData";
 
 function Project() {
-  const { id } = useParams();
+  const { slug } = useParams();
 
-  const project = projectsData.find((item) => item.id === Number(id));
+  const project = projectsData.find((item) => item.slug === slug);
 
   if (!project) {
     return (
@@ -21,59 +21,45 @@ function Project() {
       </>
     );
   }
+
   return (
     <>
       <section className="container project-section">
         <div className="project-container">
           <div className="project-top">
             <div className="project-meta-left">
-              <span>SUMMER RING</span>
-              <span>SILVER 925</span>
+              <span>{project.title}</span>
+              <span>{project.material}</span>
             </div>
 
             <div className="project-header">
-              <h1>ANDERS DESIGN</h1>
+              <h1>{project.title}</h1>
               <div className="project-header-line" />
-              <p>
-                A ring that always brings back memories of warm days and late
-                breakfasts with those you love.
-              </p>
+              <p>{project.description}</p>
             </div>
 
             <div className="project-badge">
-              <img src="/images/w5.png" alt="Project badge" />
+              <img src="/images/w5.png" alt={project.title} />
             </div>
           </div>
 
           <div className="project-gallery">
-            <div className="gallery-item gallery-item-large">
-              <img src={project.image[1]} alt="Project main visual" />
-            </div>
+            {project.rows?.slice(0, 7).map((row, rowIndex) => {
+              const safeImages = row.slice(0, 3);
 
-            <div className="gallery-row gallery-row-two">
-              <div className="gallery-item">
-                <img src={project.image[2]} alt="Project visual 1" />
-              </div>
-              <div className="gallery-item">
-                <img src={project.image[3]} alt="Project visual 2" />
-              </div>
-            </div>
-
-            <div className="gallery-row gallery-row-three">
-              <div className="gallery-item">
-                <img src={project.image[4]} alt="Project visual 3" />
-              </div>
-              <div className="gallery-item">
-                <img src={project.image[5]} alt="Project visual 4" />
-              </div>
-              <div className="gallery-item">
-                <img src={project.image[6]} alt="Project visual 5" />
-              </div>
-            </div>
-
-            <div className="gallery-item gallery-item-bottom">
-              <img src={project.image[7]} alt="Project bottom visual" />
-            </div>
+              return (
+                <div
+                  key={rowIndex}
+                  className={`project-gallery-row row-${safeImages.length}`}
+                >
+                  {safeImages.map((image) => (
+                    <div className="project-gallery-item" key={image.id}>
+                      <img src={image.src} alt={image.alt || project.title} />
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
           </div>
 
           <div className="project-cta">
@@ -83,7 +69,9 @@ function Project() {
               PROJECT&apos;S POTENTIAL.
             </h2>
 
-            <button className="project-cta-btn">contact here</button>
+            <Link to="/contact" className="project-cta-btn">
+              contact here
+            </Link>
           </div>
 
           <div className="project-divider" />
@@ -92,42 +80,28 @@ function Project() {
             <h3>other projects</h3>
 
             <div className="other-projects-grid">
-              <article className="other-project-card" key={project.id}>
-                <div className="other-project-card-top">
-                  <span>{project.title}</span>
-                  <span>{project.material}</span>
-                </div>
+              {projectsData
+                .filter((item) => item.id !== project.id)
+                .slice(0, 3)
+                .map((item) => (
+                  <article className="other-project-card" key={item.id}>
+                    <Link
+                      to={`/project/${item.slug}`}
+                      className="other-project-link"
+                    >
+                      <div className="other-project-card-top">
+                        <span>{item.title}</span>
+                        <span>{item.material}</span>
+                      </div>
 
-                <p>{project.description}</p>
+                      <p>{item.description}</p>
 
-                <div className="other-project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
-              </article>
-              <article className="other-project-card" key={project.id}>
-                <div className="other-project-card-top">
-                  <span>{project.title}</span>
-                  <span>{project.material}</span>
-                </div>
-
-                <p>{project.description}</p>
-
-                <div className="other-project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
-              </article>
-              <article className="other-project-card" key={project.id}>
-                <div className="other-project-card-top">
-                  <span>{project.title}</span>
-                  <span>{project.material}</span>
-                </div>
-
-                <p>{project.description}</p>
-
-                <div className="other-project-image">
-                  <img src={project.image} alt={project.title} />
-                </div>
-              </article>
+                      <div className="other-project-image">
+                        <img src={item.cover} alt={item.title} />
+                      </div>
+                    </Link>
+                  </article>
+                ))}
             </div>
           </div>
         </div>

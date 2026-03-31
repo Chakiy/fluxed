@@ -41,7 +41,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 600;
   color: #3e3e3e;
 }
@@ -65,7 +65,7 @@
 
 .footer-title {
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 600;
   color: #3e3e3e;
   margin-bottom: 4px;
@@ -75,7 +75,7 @@
 
 .footer-column a {
   font-family: "Instrument Sans", sans-serif;
-  font-size: 9px;
+  font-size: 16px;
   text-decoration: none;
   color: #3e3e3e;
   font-weight: 572;

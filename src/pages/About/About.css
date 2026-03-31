@@ -1,6 +1,6 @@
 .about-title {
   font-family: "Instrument Serif", sans-serif;
-  font-size: 60px;
+  font-size: 90px;
   font-weight: 400;
   color: #3e3e3e;
 }
@@ -10,7 +10,7 @@
   max-width: 600px;
   font-family: "Instrument Sans", sans-serif;
 
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 470;
 
   color: #3e3e3e;
@@ -78,14 +78,14 @@
   padding-bottom: 10px;
   margin-bottom: 10px;
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
 }
 
 .hover-info p {
   font-family: "Instrument Sans", sans-serif;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
 }

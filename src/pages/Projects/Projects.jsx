@@ -6,7 +6,7 @@ import Footer from "../../components/Footer/Footer";
 function Projects() {
   return (
     <>
-      <section className=" container projects-section">
+      <section className="container projects-section">
         <div className="projects-header">
           <h2 className="projects-title">OUR PROJECTS</h2>
 
@@ -26,11 +26,11 @@ function Projects() {
               <p className="project-description">{project.description}</p>
 
               <Link
-                to={`/project/${project.id}`}
+                to={`/project/${project.slug}`}
                 className="project-image-wrap"
               >
                 <img
-                  src={project.image[0]}
+                  src={project.cover}
                   alt={project.title}
                   className="project-image"
                 />

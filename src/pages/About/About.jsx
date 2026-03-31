@@ -10,7 +10,7 @@ function About() {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["0%", "-57%"]);
+  const x = useTransform(scrollYProgress, [0, 0.8, 1], ["0%", "-55%", "-55%"]);
 
   return (
     <>

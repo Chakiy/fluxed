@@ -21,9 +21,9 @@
 .contact-title {
   margin: 0;
   font-family: "Instrument Serif", sans-serif;
-  font-size: 60px;
+  font-size: 90px;
   font-weight: 400;
-  line-height: 60px;
+  line-height: 100%;
   color: #3e3e3e;
 }
 
@@ -61,7 +61,7 @@
 .contact-label {
   margin: 0 0 10px;
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
 }
@@ -85,7 +85,7 @@
   background: transparent;
   border-radius: 999px;
   padding: 18px 24px;
-  font-size: 16px;
+  font-size: 24px;
   font-family: "Instrument Serif", serif;
   color: #6e6b66;
   outline: none;
@@ -110,7 +110,7 @@
   border-radius: 999px;
   padding: 16px 34px;
   font-family: "Instrument Serif", serif;
-  font-size: 22px;
+  font-size: 24px;
   cursor: pointer;
   transition:
     transform 0.3s ease,
@@ -143,7 +143,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
 }
@@ -151,7 +151,7 @@
 .contact-email {
   text-decoration: none;
   color: #e66cae;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 470;
   font-family: "Geist Mono", monospace;
 }
@@ -159,7 +159,7 @@
 .contact-phone {
   text-decoration: none;
   color: #3e3e3e;
-  font-size: 18px;
+  font-size: 24px;
   font-family: "Geist Mono", monospace;
   font-weight: 470;
 }
@@ -167,53 +167,4 @@
 .contact-email:hover,
 .contact-phone:hover {
   opacity: 0.8;
-}
-
-@media (max-width: 1100px) {
-  .contact-content {
-    grid-template-columns: 1fr;
-    gap: 50px;
-  }
-
-  .contact-hero {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-badge {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-page {
-    padding: 16px 16px 0;
-  }
-
-  .contact-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 18px;
-  }
-
-  .contact-header-right {
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-
-  .contact-title {
-    font-size: clamp(42px, 12vw, 64px);
-  }
-
-  .contact-form {
-    max-width: 100%;
-  }
-
-  .contact-email,
-  .contact-phone {
-    font-size: 24px;
-  }
 }
