@@ -1,12 +1,25 @@
 import "./Home.css";
-import FluidText from "../../components/FluidText/FluidText";
+import { useEffect, useRef } from "react";
+import { initBalls } from "../../js/balls";
 
-function Home() {
+export default function Home() {
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const cleanup = initBalls(canvasRef.current);
+
+    return () => {
+      if (cleanup) cleanup();
+    };
+  }, []);
+
   return (
-    <section className="hero">
-      <h1 className="hero-title">fluxed</h1>
-    </section>
+    <div class="floating-balls-wrap">
+      <canvas ref={canvasRef} id="floatingCanvas" className="floating-canvas" />
+
+      <div class="hero-content">
+        <h1>Fluxed</h1>
+      </div>
+    </div>
   );
 }
-
-export default Home;

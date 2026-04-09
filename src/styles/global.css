@@ -10,13 +10,14 @@ body {
   background: #fffcee;
   color: #3e3e3e;
   font-family: monospace;
+  /* overflow: hidden; */
 }
 
 .container {
   max-width: 1400px;
   margin: auto;
-  padding-top: 70px;
-  margin-top: 40px;
+  /* padding-top: 70px; */
+  margin-top: 101px;
 }
 
 a {
