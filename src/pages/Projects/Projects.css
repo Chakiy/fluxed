@@ -16,10 +16,10 @@
 .projects-title {
   margin: 0;
   font-family: "Instrument Serif", serif;
-  font-size: 60px;
+  font-size: 90px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #3f3f41;
+  color: #3e3e3e;
 }
 
 .projects-contact-btn {
@@ -28,12 +28,12 @@
   justify-content: center;
   padding: 22px 60px;
   border-radius: 999px;
-  background: #3f3f41;
-  color: #f6f3e8;
+  background: #3e3e3e;
+  color: #fffcee;
   text-decoration: none;
   font-family: "Instrument Serif", serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 470;
   transition:
     transform 0.3s ease,
     opacity 0.3s ease;
@@ -48,17 +48,21 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px 16px;
+  align-items: stretch;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
-.project-top {
+.project-card-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 20px;
+  min-height: 58px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(61, 61, 59, 0.22);
   margin-bottom: 12px;
@@ -67,7 +71,7 @@
 .project-name,
 .project-material {
   font-family: "Geist Mono", monospace;
-  font-size: 9px;
+  font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
   text-transform: uppercase;
@@ -77,14 +81,17 @@
   margin: 0 0 18px;
   max-width: 95%;
   font-family: "Instrument Sans", sans-serif;
-  font-size: 9px;
+  font-size: 16px;
   font-weight: 572;
   color: #3e3e3e;
+  min-height: 120px;
+  margin-bottom: 20px;
 }
 
 .project-image-wrap {
+  display: block;
   width: 100%;
-  aspect-ratio: 0.73 / 1;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
   background: #ddd;
   display: block;

@@ -3,6 +3,7 @@ import Footer from "../../components/Footer/Footer";
 
 import { Link } from "react-router-dom";
 import "./Work.css";
+import projectsData from "../../data/projectsData";
 
 function Work() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ function Work() {
         <h2 className="h2">our work</h2>
 
         <div className="work-grid">
-          <div className="work-card">
+          {/* <div className="work-card">
             <img src="/images/w1.png" />
             <div className="work-info">
               <div className="work-header">
@@ -105,7 +106,43 @@ function Work() {
                 through brand messaging.
               </p>
             </div>
-          </div>
+          </div> */}
+
+          {projectsData.map((project) => {
+            const isClickable = project.clickable !== false;
+
+            return isClickable ? (
+              <Link
+                to={`/project/${project.slug}`}
+                className="work-card"
+                key={project.id}
+              >
+                <img src={project.cover} />
+
+                <div className="work-info">
+                  <div className="work-header">
+                    <span>{project.title}</span>
+                    <span>{project.material}</span>
+                  </div>
+
+                  <p>{project.description}</p>
+                </div>
+              </Link>
+            ) : (
+              <div className="work-card no-hover" key={project.id}>
+                <img src={project.gotFluxed.src} alt={project.gotFluxed.alt} />
+
+                <div className="work-info">
+                  <div className="work-header">
+                    <span>{project.title}</span>
+                    <span>{project.material}</span>
+                  </div>
+
+                  <p>{project.description}</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
         <div className="more-projects-container">
           <button

@@ -9,6 +9,7 @@ const projectsData = [
     fullDescription:
       "This project is inspired by summer emotions, freedom, warm wind, and bright memories. The piece combines soft elegance with a modern visual language.",
     cover: "/images/p1/cover.png",
+
     rows: [
       [{ id: 1, src: "/images/p1/1.png", alt: "Echo Studio 1" }],
       [
@@ -41,6 +42,7 @@ const projectsData = [
     fullDescription:
       "Golden Light explores luxury in a quiet and graceful way. It is a balance between minimalism and emotional storytelling.",
     cover: "/images/p2/cover.png",
+
     rows: [
       [{ id: 1, src: "/images/p2/1.png", alt: "Posters 1" }],
       [
@@ -138,6 +140,8 @@ const projectsData = [
     fullDescription:
       "Morning Dew expresses freshness, softness, and quiet beauty. It is inspired by the delicate atmosphere of early hours.",
     cover: "/images/summer.png",
+    clickable: false,
+    gotFluxed: { id: 1, src: "/images/w5.png", alt: "Got Fluxed" },
     rows: [
       [{ id: 1, src: "/images/summer.png", alt: "Morning Dew 1" }],
       [

@@ -60,6 +60,7 @@
   border-bottom: 1px solid #bfbfbf;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .work-info p {
   width: 70%;
@@ -72,7 +73,10 @@
 .work-card:hover img {
   opacity: 0;
 }
-
+.work-card.no-hover img {
+  opacity: 1;
+  padding-top: 50px;
+}
 .work-card.no-hover:hover img {
   opacity: 1;
 }
@@ -83,15 +87,13 @@
 
 .more-projects-container {
   display: flex;
-
   justify-content: center;
-
   margin-top: 80px;
 }
 
 .more-projects-btn {
   background: #3e3e3e;
-  color: #efdee6;
+  color: #fffcff;
   border: none;
   padding: 22px 60px;
   border-radius: 60px;

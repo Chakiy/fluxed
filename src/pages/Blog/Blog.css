@@ -3,8 +3,8 @@
 .blog-page {
   min-height: 100vh;
   background: #fffcee;
-  color: #2f2f34;
-  margin-top: 120px;
+  color: #3e3e3e;
+
   font-family: "IBM Plex Mono", monospace;
   position: relative;
 }

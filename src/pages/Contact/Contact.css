@@ -1,7 +1,7 @@
 .contact-page {
   min-height: 100vh;
-  background: #f5f1e6;
-  color: #2f2f33;
+  background: #fffcee;
+  color: #3e3e3e;
   padding: 18px 24px 0;
   font-family: "Geist Mono", monospace;
 }
@@ -87,7 +87,7 @@
   padding: 18px 24px;
   font-size: 24px;
   font-family: "Instrument Serif", serif;
-  color: #6e6b66;
+  color: #3e3e3e;
   outline: none;
 }
 
@@ -105,8 +105,8 @@
 .contact-send-btn,
 .contact-calendar-btn {
   border: none;
-  background: #4a4a4f;
-  color: #f5f1e6;
+  background: #3e3e3e;
+  color: #fffcee;
   border-radius: 999px;
   padding: 16px 34px;
   font-family: "Instrument Serif", serif;
@@ -135,8 +135,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 340px;
-  /* gap: 25px; */
+  /* height: 340px; */
+  gap: 78.5px;
 }
 
 .contact-info-item {
@@ -150,7 +150,7 @@
 
 .contact-email {
   text-decoration: none;
-  color: #e66cae;
+  color: #fc60a8;
   font-size: 24px;
   font-weight: 470;
   font-family: "Geist Mono", monospace;

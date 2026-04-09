@@ -18,7 +18,7 @@ function Projects() {
         <div className="projects-grid">
           {projectsData.map((project) => (
             <article className="project-card" key={project.id}>
-              <div className="project-top">
+              <div className="project-card-top">
                 <span className="project-name">{project.title}</span>
                 <span className="project-material">{project.material}</span>
               </div>
