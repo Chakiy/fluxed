@@ -18,7 +18,7 @@ export default function Home() {
       <canvas ref={canvasRef} id="floatingCanvas" className="floating-canvas" />
 
       <div class="hero-content">
-        <h1>Fluxed</h1>
+        <h1>Fluxed Agency</h1>
       </div>
     </div>
   );
