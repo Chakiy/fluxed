@@ -1,9 +1,49 @@
+.headerHome {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 20px;
+  background: #3e3e3e;
+
+  font-family: "Geist Mono", monospace;
+  font-size: 24px;
+  font-weight: medium;
+  color: #fffcee;
+  z-index: 22;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  padding-left: 130px;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a:hover {
+  color: #fc60a8;
+}
+
+/* ACTIVE PAGE */
+nav a.active,
+.logo.active {
+  color: #fc60a8; /* rose color */
+}
+
 .floating-balls-wrap {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: #fffcee;
+  /* background: #fffcee; */
+  background: #3e3e3e;
   /* margin-top: 10px; */
 }
 
@@ -30,9 +70,24 @@
 
 .hero-content h1 {
   font-family: "Instrument Serif", serif;
-  font-size: 120px;
+  font-size: 90px;
   color: #fffcee;
-  text-shadow:
+  text-transform: uppercase;
+  /* text-shadow:
     0 0 40px #fc60a8,
-    0 0 80px #fc60a8;
+    0 0 80px #fc60a8; */
+}
+
+.footer-gradient-homepage {
+  position: fixed;
+  bottom: 0;
+  z-index: 26;
+  width: 100%;
+  height: 70px;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #ff6fa2 100%
+  );
 }
