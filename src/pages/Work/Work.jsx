@@ -122,7 +122,7 @@ function Work() {
                 <div className="work-info">
                   <div className="work-header">
                     <span>{project.title}</span>
-                    <span>{project.material}</span>
+                    <span>{project.material[0]}</span>
                   </div>
 
                   <p>{project.description}</p>

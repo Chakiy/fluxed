@@ -20,10 +20,10 @@ function Projects() {
             <article className="project-card" key={project.id}>
               <div className="project-card-top">
                 <span className="project-name">{project.title}</span>
-                <span className="project-material">{project.material}</span>
+                <span className="project-material">{project.material[0]}</span>
               </div>
 
-              <p className="project-description">{project.description}</p>
+              {/* <p className="project-description">{project.description}</p> */}
 
               <Link
                 to={`/project/${project.slug}`}

@@ -71,6 +71,7 @@ nav a.active,
 .hero-content h1 {
   font-family: "Instrument Serif", serif;
   font-size: 90px;
+  width: 400;
   color: #fffcee;
   text-transform: uppercase;
   /* text-shadow:

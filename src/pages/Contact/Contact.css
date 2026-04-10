@@ -93,7 +93,7 @@
 
 .contact-form textarea {
   border-radius: 34px;
-  height: 60px;
+  height: 70px;
   resize: none;
 }
 
@@ -136,7 +136,7 @@
   flex-direction: column;
   justify-content: space-between;
   /* height: 340px; */
-  gap: 78.5px;
+  gap: 83.5px;
 }
 
 .contact-info-item {

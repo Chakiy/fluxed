@@ -28,8 +28,8 @@ function Project() {
         <div className="project-container">
           <div className="project-top">
             <div className="project-meta-left">
-              <span>{project.title}</span>
-              <span>{project.material}</span>
+              <span>{project.material[0]}</span>
+              <span>{project.material[1]}</span>
             </div>
 
             <div className="project-header">
@@ -87,10 +87,10 @@ function Project() {
                     >
                       <div className="other-project-card-top">
                         <span>{item.title}</span>
-                        <span>{item.material}</span>
+                        <span>{item.material[0]}</span>
                       </div>
 
-                      <p>{item.description}</p>
+                      {/* <p>{item.description}</p> */}
 
                       <div className="other-project-image">
                         <img src={item.cover} alt={item.title} />

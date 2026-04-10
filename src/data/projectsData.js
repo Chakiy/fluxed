@@ -3,7 +3,7 @@ const projectsData = [
     id: 1,
     slug: "echo-studio",
     title: "Echo Studio",
-    material: "Branding, Web design",
+    material: ["Branding", "Web design"],
     description:
       "Echo Studio is a multimedia space dedicated to exploring literature and writing. The main goal of the project is to create a new branding for the platform, develop visual systems, and establish key forms of visual communication with consumers.",
     fullDescription:
@@ -36,7 +36,7 @@ const projectsData = [
     id: 2,
     slug: "posters-visual-experiments",
     title: "Posters & Visual Experiments",
-    material: "Polygraphy, AI Illustrations",
+    material: ["Polygraphy", "AI Illustrations"],
     description:
       "A selection of commissioned and self-initiated poster works for brands and companies. Each project reflects our approach to concept, composition, and visual storytelling.",
     fullDescription:
@@ -70,7 +70,7 @@ const projectsData = [
     id: 3,
     slug: "Editorial-Print-Works",
     title: "Editorial & Print Works",
-    material: "Art Direction Polygraphy",
+    material: ["Art Direction", "Polygraphy"],
     description:
       "A curated selection of books and printed materials created for various brands and clients. Each project focuses on layout, typography, and a strong editorial approach.",
     fullDescription:
@@ -97,7 +97,7 @@ const projectsData = [
     id: 4,
     slug: "Pulkulak-Branded-Merchandise",
     title: "Pulkulak. Branded Merchandise",
-    material: "Product Design Brand Identity",
+    material: ["Product Design", "Brand Identity"],
     description:
       "Pulkulak is a contemporary souvenir brand from Yerevan, created for expats and visitors seeking playful, culturally relevant objects. We developed a bold, modern merch collection that resonates with a younger audience, helping the brand gain recognition and enter some of the city’s most popular spots.",
     fullDescription:
@@ -134,7 +134,7 @@ const projectsData = [
     id: 5,
     slug: "morning-dew",
     title: "MORNING DEW",
-    material: "SILVER 925",
+    material: ["SILVER 925"],
     description:
       "Gentle, refined, and fresh — designed to feel subtle but unforgettable.",
     fullDescription:
@@ -156,7 +156,7 @@ const projectsData = [
     id: 6,
     slug: "elegant-wave",
     title: "ELEGANT WAVE",
-    material: "WHITE GOLD",
+    material: ["WHITE GOLD"],
     description:
       "A flowing form with a luxurious character and soft sculptural lines.",
     fullDescription:

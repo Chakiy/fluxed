@@ -237,7 +237,7 @@ export function initBalls(canvas) {
   }
 
   function createBalls() {
-    const amount = Math.max(24, Math.floor(window.innerWidth / 110));
+    const amount = Math.max(33, Math.floor(window.innerWidth / 110));
     balls = [];
 
     for (let i = 0; i < amount; i++) {
