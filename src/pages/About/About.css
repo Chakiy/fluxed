@@ -7,26 +7,27 @@
 
 .about-description {
   margin-top: 20px;
-  margin-bottom: -15px;
+
   max-width: 600px;
   font-family: "Instrument Sans", sans-serif;
-
   font-size: 24px;
   font-weight: 470;
-
   color: #3e3e3e;
 }
 
 /* Horizontal scroll section */
 
 .horizontal-section {
-  height: 300vh;
+  height: 450vh;
   position: relative;
+
+  /* margin-top: 50px; */
 }
 
 .sticky-wrapper {
   position: sticky;
   top: 0;
+  /* bottom: 20; */
   height: 110vh;
   display: flex;
   align-items: center;
@@ -55,7 +56,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #fffcee;
+  /* background: #fffcee; */
   transition: 0.4s ease;
   opacity: 0;
 }

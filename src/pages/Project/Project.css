@@ -1,5 +1,5 @@
 .project-section {
-  background: #fffcee;
+  /* background: #fffcee; */
   min-height: 100vh;
   /* padding: 32px 0 80px; */
 }
@@ -10,8 +10,8 @@
 }
 
 .project-top {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 40px;
   margin-bottom: 48px;
@@ -19,8 +19,8 @@
 
 .project-meta-left {
   display: flex;
-  justify-content: space-between;
-  gap: 36px;
+  /* justify-content: space-between; */
+  gap: 70px;
   font-family: "Geist Mono", monospace;
   font-size: 14px;
   font-weight: 572;
@@ -150,11 +150,12 @@
 } */
 
 .project-cta {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: flex-start;
+  gap: 32px; */
   padding: 120px 0 80px;
+  /* flex-wrap: nowrap; */
 }
 
 .project-cta h2 {
@@ -164,14 +165,16 @@
   font-weight: 400;
   color: #3e3e3e;
   line-height: 100%;
-  /* max-width: 980px; */
+  /* max-width: 1200px; */
+  /* flex: 0 1 auto; */
 }
 
 .project-cta-btn {
+  display: inline;
   border: none;
   background: #3e3e3e;
   color: #fffcee;
-  padding: 24px 56px;
+  padding: 22px 56px;
   border-radius: 999px;
   font-family: "Instrument Serif", serif;
   font-size: 24px;
@@ -181,6 +184,9 @@
     transform 0.3s ease,
     opacity 0.3s ease;
   white-space: nowrap;
+
+  vertical-align: super;
+  margin-left: 20px;
 }
 
 .project-cta-btn:hover {
@@ -188,15 +194,15 @@
   opacity: 0.92;
 }
 
-.project-divider {
+/* .project-divider {
   width: 100%;
   height: 1px;
   background: #d3cec3;
   margin-bottom: 42px;
-}
+} */
 
 .other-projects h3 {
-  margin: 0 0 30px;
+  margin: 50px 0 30px;
   font-family: "Geist Mono", monospace;
   font-size: 24px;
   font-weight: 470;

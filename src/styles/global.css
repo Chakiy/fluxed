@@ -12,6 +12,15 @@ body,
 
 body {
   background: #fffcee;
+
+  /* background: linear-gradient(
+    90deg,
+    #fffcee 0%,
+    #dffbef 18%,
+    #9df9e5 50%,
+    #dffbef 82%,
+    #fffcee 100%
+  ); */
   color: #3e3e3e;
   font-family: monospace;
   /* overflow: hidden; */
@@ -22,6 +31,17 @@ body {
   margin: auto;
   /* padding-top: 70px; */
   margin-top: 101px;
+  /* background: linear-gradient(
+    90deg,
+    #f3f1e8 0%,
+    #d7eee5 12%,
+    #b7e7da 22%,
+    #98dfd0 38%,
+    #98dfd0 62%,
+    #b7e7da 78%,
+    #d7eee5 88%,
+    #f3f1e8 100%
+  ); */
 }
 
 a {

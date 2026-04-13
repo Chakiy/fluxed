@@ -2,7 +2,7 @@
 
 .blog-page {
   min-height: 100vh;
-  background: #fffcee;
+  /* background: #fffcee; */
   color: #3e3e3e;
 
   font-family: "IBM Plex Mono", monospace;
@@ -59,7 +59,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  background: #ddd;
+  /* background: #ddd; */
 }
 
 .blog-card-meta {

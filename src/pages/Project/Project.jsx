@@ -63,14 +63,13 @@ function Project() {
           </div>
 
           <div className="project-cta">
-            <h2>CONNECT WITH US TO EXPLORE YOUR PROJECT&apos;S POTENTIAL.</h2>
-
-            <Link to="/contact" className="project-cta-btn">
-              contact here
-            </Link>
+            <h2>
+              CONNECT WITH US TO EXPLORE YOUR PROJECT&apos;S POTENTIAL.
+              <Link to="/contact" className="project-cta-btn">
+                contact here
+              </Link>{" "}
+            </h2>
           </div>
-
-          <div className="project-divider" />
 
           <div className="other-projects">
             <h3>other projects</h3>

@@ -1,5 +1,5 @@
 .footer {
-  padding: 0px 0 0 0;
+  padding: 0;
 }
 
 /* container */
@@ -13,10 +13,6 @@
   border-top: 1px solid #ddd;
 }
 
-/* .container.footer-container {
-  margin-top: 40px 0 0 0;
-  border-top: 1px solid black;
-} */
 /* left */
 
 .footer-left {
@@ -28,7 +24,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   transform-origin: center;
   transition: transform 0.9s ease;
 }
@@ -40,14 +35,21 @@
 .footer-agency {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  min-height: 95px;
   font-family: "Geist Mono", monospace;
   font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
 }
 
+.agency-name,
+.agency-type {
+  display: block;
+}
+
 .agency-year {
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 /* right */
@@ -60,7 +62,8 @@
 .footer-column {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  min-height: 95px;
 }
 
 .footer-title {
@@ -68,10 +71,16 @@
   font-size: 14px;
   font-weight: 572;
   color: #3e3e3e;
-  margin-bottom: 4px;
+  margin-bottom: 0;
 }
 
 /* links */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
 .footer-column a {
   font-family: "Instrument Sans", sans-serif;
@@ -79,7 +88,7 @@
   text-decoration: none;
   color: #3e3e3e;
   font-weight: 400;
-  margin-bottom: -8px;
+  margin-bottom: 0;
 }
 
 .footer-column a:hover {
@@ -98,7 +107,6 @@
 
 .footer-gradient {
   height: 70px;
-
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
