@@ -1,10 +1,12 @@
 import "./Contact.css";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 function Contact() {
   return (
     <>
+      {/* <FluxedMode /> */}
       <section className="container">
         <div className="contact-hero">
           <div className="contact-title-wrap">

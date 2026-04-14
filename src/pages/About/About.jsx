@@ -2,6 +2,7 @@ import Footer from "../../components/Footer/Footer";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import "./About.css";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 function About() {
   const targetRef = useRef(null);
@@ -18,6 +19,7 @@ function About() {
 
   return (
     <>
+      {/* <FluxedMode /> */}
       <section className="container">
         <h1 className="about-title">CREATIVE SERVICES</h1>
 

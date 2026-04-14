@@ -4,11 +4,13 @@ import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
 import "./Work.css";
 import projectsData from "../../data/projectsData";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 function Work() {
   const navigate = useNavigate();
   return (
     <>
+      {/* <FluxedMode /> */}
       <section className="container work">
         <h2 className="h2">our work</h2>
 

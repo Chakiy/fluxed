@@ -2,6 +2,7 @@ import "./Home.css";
 import { useEffect, useRef } from "react";
 import { initBalls } from "../../js/balls";
 import { NavLink } from "react-router-dom";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 export default function Home() {
   const canvasRef = useRef(null);

@@ -1,5 +1,6 @@
 import "./Blog.css";
 import Footer from "../../components/Footer/Footer";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 const blogPosts = [
   {
@@ -54,6 +55,7 @@ const blogPosts = [
 function Blog() {
   return (
     <>
+      {/* <FluxedMode /> */}
       <section className="container blog-page">
         <div className="blog-socials">
           <a href="https://www.instagram.com/fluxed.agency?igsh=MWhkbm9lMXltcjQxNw%3D%3D&utm_source=qr">

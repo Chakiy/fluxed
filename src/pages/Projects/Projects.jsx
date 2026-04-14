@@ -2,10 +2,12 @@ import "./Projects.css";
 import { Link } from "react-router-dom";
 import projectsData from "../../data/projectsData";
 import Footer from "../../components/Footer/Footer";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 function Projects() {
   return (
     <>
+      {/* <FluxedMode /> */}
       <section className="container projects-section">
         <div className="projects-header">
           <h2 className="projects-title">OUR PROJECTS</h2>

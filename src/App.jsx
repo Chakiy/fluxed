@@ -8,12 +8,17 @@ import Contact from "./pages/Contact/Contact";
 import Blog from "./pages/Blog/Blog";
 import Projects from "./pages/Projects/Projects";
 import Project from "./pages/Project/Project";
+import FluxedMode from "./components/FluxedMode/FluxedMode";
+import FluxedCursor from "./components/FluxedCursor/FluxedCursor";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <FluxedMode />
+        <FluxedCursor />
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work" element={<Work />} />

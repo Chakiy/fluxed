@@ -2,6 +2,7 @@ import Footer from "../../components/Footer/Footer";
 import "./Project.css";
 import { useParams, Link } from "react-router-dom";
 import projectsData from "../../data/projectsData";
+import FluxedMode from "../../components/FluxedMode/FluxedMode";
 
 function Project() {
   const { slug } = useParams();
@@ -24,6 +25,7 @@ function Project() {
 
   return (
     <>
+      {/* <FluxedMode /> */}
       <section className="container project-section">
         <div className="project-container">
           <div className="project-top">

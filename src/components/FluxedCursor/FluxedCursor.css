@@ -1,0 +1,32 @@
+.fluxed-cursor-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.fluxed-cursor-main,
+.fluxed-cursor-trail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+  will-change: transform;
+}
+
+.fluxed-cursor-main {
+  opacity: 1;
+}
+
+.fluxed-cursor-trail {
+  filter: blur(0.2px);
+}
+
+body.fluxed-cursor-active,
+body.fluxed-cursor-active * {
+  cursor: none !important;
+}
