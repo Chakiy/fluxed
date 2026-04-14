@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import "./FluxedCursor.css";
 
 const TRAIL_COUNT = 18;
-const CURSOR_SIZE = 30;
+const CURSOR_SIZE = 40;
 
 function FluxedCursor() {
   const [isActive, setIsActive] = useState(() => {
@@ -44,14 +44,14 @@ function FluxedCursor() {
       head.current.x += (mouse.current.x - head.current.x) * 0.22;
       head.current.y += (mouse.current.y - head.current.y) * 0.22;
 
-      trail.current[0].x += (head.current.x - trail.current[0].x) * 0.35;
-      trail.current[0].y += (head.current.y - trail.current[0].y) * 0.35;
+      trail.current[0].x += (head.current.x - trail.current[0].x) * 0.2;
+      trail.current[0].y += (head.current.y - trail.current[0].y) * 0.2;
 
       for (let i = 1; i < trail.current.length; i += 1) {
         trail.current[i].x +=
-          (trail.current[i - 1].x - trail.current[i].x) * 0.35;
+          (trail.current[i - 1].x - trail.current[i].x) * 0.2;
         trail.current[i].y +=
-          (trail.current[i - 1].y - trail.current[i].y) * 0.35;
+          (trail.current[i - 1].y - trail.current[i].y) * 0.2;
       }
 
       forceRender((value) => value + 1);
