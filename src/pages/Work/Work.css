@@ -21,9 +21,6 @@
   position: relative;
   height: 420px;
   overflow: hidden;
-  cursor:
-    url("/images/cursor.png") 12 12,
-    auto;
 }
 .work-card img {
   position: absolute;

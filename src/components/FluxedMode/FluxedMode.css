@@ -4,33 +4,32 @@
   right: 20px;
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   border: none;
-  background-color: #3e3e3e;
-  color: #f5f0e8;
-  font-size: 24px;
-  font-weight: 470;
-  font-family: "Instrument Serif", sans-serif;
+  background: transparent;
+  padding: 0;
+  margin: 0;
   cursor: pointer;
   z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: lowercase;
-  transition: all 0.3s ease;
+  border-radius: 50%;
+  animation: fluxedFloat 1.5s ease-in-out infinite;
 }
 
-.fluxedMode.active {
-  background-color: #9df9e5;
-  color: #3e3e3e;
+.fluxedMode-image {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
 }
 
 .fluxedMode:hover {
-  transform: scale(1.03);
+  transform: scale(1.5);
 }
 
 body {
-  transition: background 0.8s ease;
+  transition: background 0.3s ease;
 }
 
 body.classic-mode {
@@ -42,4 +41,19 @@ body.classic-mode {
     #dffbef 82%,
     #fffcee 100%
   );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes fluxedFloat {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

@@ -36,10 +36,18 @@ function FluxedMode() {
 
   return (
     <button
-      className={`fluxedMode ${isClassic ? "active" : ""}`}
+      type="button"
+      className="fluxedMode"
       onClick={() => setIsClassic((prev) => !prev)}
+      aria-label={
+        isClassic ? "Switch to fluxed mode" : "Switch to classic mode"
+      }
     >
-      {isClassic ? "classic" : "fluxed"}
+      <img
+        src={isClassic ? "/images/classic.png" : "/images/fluxed.png"}
+        alt={isClassic ? "classic mode" : "fluxed mode"}
+        className="fluxedMode-image"
+      />
     </button>
   );
 }
