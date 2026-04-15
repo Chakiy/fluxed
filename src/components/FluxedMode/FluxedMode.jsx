@@ -12,6 +12,8 @@ function FluxedMode() {
     return savedMode === "classic";
   });
 
+  const hideOnHome = location.pathname === "/";
+
   useEffect(() => {
     const mode = isClassic ? "classic" : "fluxed";
 
@@ -33,6 +35,14 @@ function FluxedMode() {
   }, [isClassic]);
 
   useEffect(() => {
+    if (hideOnHome) {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+        animationRef.current = null;
+      }
+      return;
+    }
+
     const element = floatRef.current;
     if (!element) return;
 
@@ -106,11 +116,11 @@ function FluxedMode() {
     return () => {
       if (animationRef.current) {
         cancelAnimationFrame(animationRef.current);
+        animationRef.current = null;
       }
     };
-  }, []);
+  }, [hideOnHome, location.pathname]);
 
-  const hideOnHome = location.pathname === "/";
   if (hideOnHome) return null;
 
   return (
