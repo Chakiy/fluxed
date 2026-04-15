@@ -35,7 +35,6 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   font-family: var(--font-sans);
-  /* line-height: 1.5; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -86,8 +85,8 @@ h5,
 h6,
 .display,
 .serif-title {
-  font-family: var(--font-serif);
-  font-weight: 400;
+  /* font-family: var(--font-serif); */
+  /* font-weight: 400; */
   line-height: 1;
   color: var(--text-color);
 }
@@ -101,7 +100,7 @@ input,
 textarea,
 button {
   font-family: var(--font-sans);
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 .mono,
@@ -114,29 +113,4 @@ button {
 .footer-meta {
   font-family: var(--font-mono);
   text-transform: uppercase;
-}
-
-/* Optional shared type helpers */
-
-.section-label {
-  font-family: var(--font-mono);
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--text-color);
-}
-
-.section-title-xl {
-  font-family: var(--font-serif);
-  font-size: clamp(3rem, 7vw, 5.625rem);
-  font-weight: 400;
-  line-height: 1;
-  color: var(--text-color);
-}
-
-.body-large {
-  font-family: var(--font-sans);
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  line-height: 1.45;
-  color: var(--text-color);
 }

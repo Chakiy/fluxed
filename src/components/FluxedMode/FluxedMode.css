@@ -8,7 +8,6 @@
   background: transparent;
   padding: 0;
   margin: 0;
-  cursor: pointer;
   z-index: 1000;
 }
 
@@ -26,13 +25,14 @@
   height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  pointer-events: none;
+  pointer-events: auto;
   user-select: none;
   transition: transform 0.25s ease;
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
+  cursor: pointer;
 }
 
-.fluxedMode:hover .fluxedMode-image {
+.fluxedMode-image:hover {
   transform: scale(1.05);
 }
 

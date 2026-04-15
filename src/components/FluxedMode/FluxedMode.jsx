@@ -119,22 +119,16 @@ function FluxedMode() {
   if (hideOnHome) return null;
 
   return (
-    <button
-      type="button"
-      className="fluxedMode"
-      onClick={() => setIsClassic((prev) => !prev)}
-      aria-label={
-        isClassic ? "Switch to fluxed mode" : "Switch to classic mode"
-      }
-    >
+    <div className="fluxedMode" aria-hidden="false">
       <span ref={floatRef} className="fluxedMode-float">
         <img
           src={isClassic ? "/images/classic.png" : "/images/fluxed.png"}
           alt={isClassic ? "classic mode" : "fluxed mode"}
           className="fluxedMode-image"
+          onClick={() => setIsClassic((prev) => !prev)}
         />
       </span>
-    </button>
+    </div>
   );
 }
 
