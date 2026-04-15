@@ -34,14 +34,14 @@ export default function Home() {
         </div>
       </header>
 
-      <div class="floating-balls-wrap">
+      <div className="floating-balls-wrap">
         <canvas
           ref={canvasRef}
           id="floatingCanvas"
           className="floating-canvas"
         />
 
-        <div class="hero-content">
+        <div className="hero-content">
           <h1>Fluxed Agency</h1>
         </div>
       </div>

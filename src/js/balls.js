@@ -26,9 +26,26 @@ export function initBalls(canvas) {
   let isDestroyed = false;
   let time = 0;
 
+  let viewportWidth = window.innerWidth;
+  let viewportHeight = window.innerHeight;
+
   function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const dpr = window.devicePixelRatio || 1;
+
+    viewportWidth = window.innerWidth;
+    viewportHeight = window.innerHeight;
+
+    canvas.width = Math.floor(viewportWidth * dpr);
+    canvas.height = Math.floor(viewportHeight * dpr);
+
+    canvas.style.width = `${viewportWidth}px`;
+    canvas.style.height = `${viewportHeight}px`;
+
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.scale(dpr, dpr);
+
+    ctx.imageSmoothingEnabled = true;
+    ctx.imageSmoothingQuality = "high";
   }
 
   function random(min, max) {
@@ -179,16 +196,16 @@ export function initBalls(canvas) {
       if (this.x - this.radius < 0) {
         this.x = this.radius;
         this.vx = Math.abs(this.vx);
-      } else if (this.x + this.radius > canvas.width) {
-        this.x = canvas.width - this.radius;
+      } else if (this.x + this.radius > viewportWidth) {
+        this.x = viewportWidth - this.radius;
         this.vx = -Math.abs(this.vx);
       }
 
       if (this.y - this.radius < 0) {
         this.y = this.radius;
         this.vy = Math.abs(this.vy);
-      } else if (this.y + this.radius > canvas.height) {
-        this.y = canvas.height - this.radius;
+      } else if (this.y + this.radius > viewportHeight) {
+        this.y = viewportHeight - this.radius;
         this.vy = -Math.abs(this.vy);
       }
     }
@@ -250,8 +267,8 @@ export function initBalls(canvas) {
       let validPosition = false;
 
       while (!validPosition && attempts < 200) {
-        x = random(radius, canvas.width - radius);
-        y = random(radius, canvas.height - radius);
+        x = random(radius, viewportWidth - radius);
+        y = random(radius, viewportHeight - radius);
         validPosition = true;
 
         for (let j = 0; j < balls.length; j++) {

@@ -55,10 +55,10 @@ function FluxedMode() {
     let rotation = 0;
     let rotationVelocity = 0;
 
-    const maxLeft = -120;
+    const maxLeft = -70;
     const maxRight = 0;
     const maxTop = 0;
-    const maxBottom = 120;
+    const maxBottom = 70;
 
     const animate = () => {
       ax += (Math.random() - 0.5) * 0.0035;
