@@ -34,7 +34,7 @@ body {
   min-height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
-  font-family: var(--font-sans);
+  /* font-family: var(--font-sans); */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -99,7 +99,7 @@ li,
 input,
 textarea,
 button {
-  font-family: var(--font-sans);
+  /* font-family: var(--font-sans); */
   /* color: var(--text-color); */
 }
 
@@ -111,6 +111,6 @@ button {
 .nav-text,
 .project-meta,
 .footer-meta {
-  font-family: var(--font-mono);
+  /* font-family: var(--font-mono); */
   text-transform: uppercase;
 }
