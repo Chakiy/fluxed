@@ -43,10 +43,10 @@ function FluxedMode() {
       vy: 0.18,
       ax: 0,
       ay: 0,
-      maxLeft: -80,
+      maxLeft: -100,
       maxRight: 0,
       maxTop: 0,
-      maxBottom: 80,
+      maxBottom: 100,
       rotation: 0,
       rotationVelocity: 0,
     };
