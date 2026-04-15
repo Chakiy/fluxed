@@ -36,72 +36,68 @@ function FluxedMode() {
     const element = floatRef.current;
     if (!element) return;
 
-    const state = {
-      x: -35,
-      y: 20,
-      vx: -0.8,
-      vy: 0.6,
-      ax: 0,
-      ay: 0,
-      maxLeft: -160,
-      maxRight: 0,
-      maxTop: 0,
-      maxBottom: 160,
-      rotation: 0,
-      rotationVelocity: 0,
-    };
+    let x = -35;
+    let y = 20;
+    let vx = -0.45;
+    let vy = 0.32;
+    let ax = 0;
+    let ay = 0;
+    let rotation = 0;
+    let rotationVelocity = 0;
+
+    const maxLeft = -120;
+    const maxRight = 0;
+    const maxTop = 0;
+    const maxBottom = 120;
 
     const animate = () => {
-      state.ax += (Math.random() - 0.5) * 0.004;
-      state.ay += (Math.random() - 0.5) * 0.004;
+      ax += (Math.random() - 0.5) * 0.0035;
+      ay += (Math.random() - 0.5) * 0.0035;
 
-      state.ax *= 0.96;
-      state.ay *= 0.96;
+      ax *= 0.97;
+      ay *= 0.97;
 
-      state.vx += state.ax;
-      state.vy += state.ay;
+      vx += ax;
+      vy += ay;
 
-      state.vx *= 0.992;
-      state.vy *= 0.992;
+      vx *= 0.994;
+      vy *= 0.994;
 
-      const speedLimit = 0.65;
-      state.vx = Math.max(-speedLimit, Math.min(speedLimit, state.vx));
-      state.vy = Math.max(-speedLimit, Math.min(speedLimit, state.vy));
+      const speedLimit = 0.85;
+      vx = Math.max(-speedLimit, Math.min(speedLimit, vx));
+      vy = Math.max(-speedLimit, Math.min(speedLimit, vy));
 
-      state.x += state.vx;
-      state.y += state.vy;
+      x += vx;
+      y += vy;
 
-      if (state.x < state.maxLeft) {
-        state.x = state.maxLeft;
-        state.vx *= -0.88;
+      if (x < maxLeft) {
+        x = maxLeft;
+        vx = Math.abs(vx) * 0.92;
       }
 
-      if (state.x > state.maxRight) {
-        state.x = state.maxRight;
-        state.vx *= -0.88;
+      if (x > maxRight) {
+        x = maxRight;
+        vx = -Math.abs(vx) * 0.92;
       }
 
-      if (state.y < state.maxTop) {
-        state.y = state.maxTop;
-        state.vy *= -0.88;
+      if (y < maxTop) {
+        y = maxTop;
+        vy = Math.abs(vy) * 0.92;
       }
 
-      if (state.y > state.maxBottom) {
-        state.y = state.maxBottom;
-        state.vy *= -0.88;
+      if (y > maxBottom) {
+        y = maxBottom;
+        vy = -Math.abs(vy) * 0.92;
       }
 
-      state.rotationVelocity += state.vx * 0.02;
-      state.rotationVelocity *= 0.94;
-      state.rotation += state.rotationVelocity;
+      rotationVelocity += vx * 0.035;
+      rotationVelocity *= 0.95;
+      rotation += rotationVelocity;
 
-      const breathing = 1 + Math.sin(Date.now() * 0.0018) * 0.025;
+      const breathing = 1 + Math.sin(Date.now() * 0.002) * 0.025;
 
-      element.style.transform = `
-  translate3d(${state.x}px, ${state.y}px, 0)
-  rotate(${state.rotation}deg)
-  scale(${breathing})
-`;
+      element.style.transform = `translate3d(${x}px, ${y}px, 0) rotate(${rotation}deg) scale(${breathing})`;
+
       animationRef.current = requestAnimationFrame(animate);
     };
 
