@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "./fluxedMode.css";
+import "./FluxedMode.css";
 
 function FluxedMode() {
   const location = useLocation();
