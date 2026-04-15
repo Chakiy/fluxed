@@ -39,14 +39,14 @@ function FluxedMode() {
     const state = {
       x: -35,
       y: 20,
-      vx: -0.22,
-      vy: 0.18,
+      vx: -0.8,
+      vy: 0.6,
       ax: 0,
       ay: 0,
-      maxLeft: -100,
+      maxLeft: -160,
       maxRight: 0,
       maxTop: 0,
-      maxBottom: 100,
+      maxBottom: 160,
       rotation: 0,
       rotationVelocity: 0,
     };
@@ -98,11 +98,10 @@ function FluxedMode() {
       const breathing = 1 + Math.sin(Date.now() * 0.0018) * 0.025;
 
       element.style.transform = `
-        translate(${state.x}px, ${state.y}px)
-        rotate(${state.rotation}deg)
-        scale(${breathing})
-      `;
-
+  translate3d(${state.x}px, ${state.y}px, 0)
+  rotate(${state.rotation}deg)
+  scale(${breathing})
+`;
       animationRef.current = requestAnimationFrame(animate);
     };
 
