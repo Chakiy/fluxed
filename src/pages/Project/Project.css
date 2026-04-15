@@ -135,8 +135,8 @@
 }
 
 .project-cta-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.92;
+  background: #fc60a8;
+  color: #3e3e3e;
 }
 
 .other-projects h3 {

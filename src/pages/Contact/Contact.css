@@ -1,13 +1,5 @@
 .contact-hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
   margin-bottom: 40px;
-}
-
-.contact-title-wrap {
-  max-width: 100%;
 }
 
 .contact-title {
@@ -94,8 +86,8 @@
 
 .contact-send-btn:hover,
 .contact-calendar-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.92;
+  background: #fc60a8;
+  color: #3e3e3e;
 }
 
 .contact-info-block {

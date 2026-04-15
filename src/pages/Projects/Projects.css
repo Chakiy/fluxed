@@ -40,8 +40,8 @@
 }
 
 .projects-contact-btn:hover {
-  transform: translateY(-2px);
-  opacity: 0.92;
+  background: #fc60a8;
+  color: #3e3e3e;
 }
 
 .projects-grid {
@@ -76,17 +76,6 @@
   color: #3e3e3e;
   text-transform: uppercase;
 }
-
-/* .project-description {
-  margin: 0 0 18px;
-  max-width: 95%;
-  font-family: "Instrument Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 572;
-  color: #3e3e3e;
-  min-height: 120px;
-  margin-bottom: 20px;
-} */
 
 .project-image-wrap {
   display: block;

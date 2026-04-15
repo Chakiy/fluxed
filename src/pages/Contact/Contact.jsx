@@ -10,9 +10,8 @@ function Contact() {
         <div className="contact-hero">
           <div className="contact-title-wrap">
             <h1 className="contact-title">
-              WE’RE HAPPY TO DISCUSS YOUR NEEDS
-              <br />
-              AND PROVIDE A PERSONALIZED PROPOSAL
+              WE’RE HAPPY TO DISCUSS YOUR NEEDS AND PROVIDE A PERSONALIZED
+              PROPOSAL
             </h1>
           </div>
         </div>
