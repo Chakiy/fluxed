@@ -1,5 +1,5 @@
 .about-title {
-  font-family: "Instrument Serif", sans-serif;
+  font-family: "Instrument Serif", serif;
   font-size: 90px;
   font-weight: 400;
   color: #3e3e3e;
@@ -68,9 +68,6 @@
   opacity: 0;
 }
 .image-card:hover {
-  /* cursor:
-    url("/images/cursor.png") 6 6,
-    auto; */
 }
 
 .hover-header {

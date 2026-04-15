@@ -1,6 +1,6 @@
 .fluxedMode {
   position: fixed;
-  top: 80px;
+  top: 40px;
   right: 20px;
   width: 100px;
   height: 100px;
@@ -10,8 +10,14 @@
   margin: 0;
   cursor: pointer;
   z-index: 1000;
-  border-radius: 50%;
-  animation: fluxedFloat 1.5s ease-in-out infinite;
+}
+
+.fluxedMode-float {
+  display: block;
+  width: 100px;
+  height: 100px;
+  will-change: transform;
+  transform-origin: center;
 }
 
 .fluxedMode-image {
@@ -22,10 +28,12 @@
   border-radius: 50%;
   pointer-events: none;
   user-select: none;
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.12));
 }
 
-.fluxedMode:hover {
-  transform: scale(1.5);
+.fluxedMode:hover .fluxedMode-image {
+  transform: scale(1.05);
 }
 
 body {
@@ -44,16 +52,4 @@ body.classic-mode {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-@keyframes fluxedFloat {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
 }

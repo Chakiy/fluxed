@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import "./FluxedMode.css";
+import "./fluxedMode.css";
 
 function FluxedMode() {
   const location = useLocation();
+  const floatRef = useRef(null);
+  const animationRef = useRef(null);
 
   const [isClassic, setIsClassic] = useState(() => {
     const savedMode = localStorage.getItem("site-mode");
@@ -30,8 +32,90 @@ function FluxedMode() {
     );
   }, [isClassic]);
 
-  const hideOnHome = location.pathname === "/";
+  useEffect(() => {
+    const element = floatRef.current;
+    if (!element) return;
 
+    const state = {
+      x: -35,
+      y: 20,
+      vx: -0.22,
+      vy: 0.18,
+      ax: 0,
+      ay: 0,
+      maxLeft: -100,
+      maxRight: 0,
+      maxTop: 0,
+      maxBottom: 100,
+      rotation: 0,
+      rotationVelocity: 0,
+    };
+
+    const animate = () => {
+      state.ax += (Math.random() - 0.5) * 0.004;
+      state.ay += (Math.random() - 0.5) * 0.004;
+
+      state.ax *= 0.96;
+      state.ay *= 0.96;
+
+      state.vx += state.ax;
+      state.vy += state.ay;
+
+      state.vx *= 0.992;
+      state.vy *= 0.992;
+
+      const speedLimit = 0.65;
+      state.vx = Math.max(-speedLimit, Math.min(speedLimit, state.vx));
+      state.vy = Math.max(-speedLimit, Math.min(speedLimit, state.vy));
+
+      state.x += state.vx;
+      state.y += state.vy;
+
+      if (state.x < state.maxLeft) {
+        state.x = state.maxLeft;
+        state.vx *= -0.88;
+      }
+
+      if (state.x > state.maxRight) {
+        state.x = state.maxRight;
+        state.vx *= -0.88;
+      }
+
+      if (state.y < state.maxTop) {
+        state.y = state.maxTop;
+        state.vy *= -0.88;
+      }
+
+      if (state.y > state.maxBottom) {
+        state.y = state.maxBottom;
+        state.vy *= -0.88;
+      }
+
+      state.rotationVelocity += state.vx * 0.02;
+      state.rotationVelocity *= 0.94;
+      state.rotation += state.rotationVelocity;
+
+      const breathing = 1 + Math.sin(Date.now() * 0.0018) * 0.025;
+
+      element.style.transform = `
+        translate(${state.x}px, ${state.y}px)
+        rotate(${state.rotation}deg)
+        scale(${breathing})
+      `;
+
+      animationRef.current = requestAnimationFrame(animate);
+    };
+
+    animationRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+    };
+  }, []);
+
+  const hideOnHome = location.pathname === "/";
   if (hideOnHome) return null;
 
   return (
@@ -43,11 +127,13 @@ function FluxedMode() {
         isClassic ? "Switch to fluxed mode" : "Switch to classic mode"
       }
     >
-      <img
-        src={isClassic ? "/images/classic.png" : "/images/fluxed.png"}
-        alt={isClassic ? "classic mode" : "fluxed mode"}
-        className="fluxedMode-image"
-      />
+      <span ref={floatRef} className="fluxedMode-float">
+        <img
+          src={isClassic ? "/images/classic.png" : "/images/fluxed.png"}
+          alt={isClassic ? "classic mode" : "fluxed mode"}
+          className="fluxedMode-image"
+        />
+      </span>
     </button>
   );
 }

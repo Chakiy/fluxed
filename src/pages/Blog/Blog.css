@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
-
 .blog-page {
   min-height: 100vh;
-  /* background: #fffcee; */
   color: #3e3e3e;
-
-  font-family: "IBM Plex Mono", monospace;
   position: relative;
 }
 
@@ -59,7 +54,6 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  /* background: #ddd; */
 }
 
 .blog-card-meta {

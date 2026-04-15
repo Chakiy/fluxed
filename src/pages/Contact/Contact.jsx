@@ -6,7 +6,6 @@ import FluxedMode from "../../components/FluxedMode/FluxedMode";
 function Contact() {
   return (
     <>
-      {/* <FluxedMode /> */}
       <section className="container">
         <div className="contact-hero">
           <div className="contact-title-wrap">
@@ -16,8 +15,6 @@ function Contact() {
               AND PROVIDE A PERSONALIZED PROPOSAL
             </h1>
           </div>
-
-          {/* <div className="contact-badge">fluxed</div> */}
         </div>
 
         <div className="contact-content">
