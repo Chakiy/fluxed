@@ -19,7 +19,6 @@ function About() {
 
   return (
     <>
-      {/* <FluxedMode /> */}
       <section className="container">
         <h1 className="about-title">CREATIVE SERVICES</h1>
 
