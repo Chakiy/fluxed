@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 25px 20px;
+  padding: 25px clamp(16px, 1.4vw, 24px); /* ← синхронизируй с container */
   background: #fffcee;
   background: linear-gradient(
     360deg,
