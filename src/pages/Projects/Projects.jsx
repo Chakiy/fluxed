@@ -7,7 +7,6 @@ import FluxedMode from "../../components/FluxedMode/FluxedMode";
 function Projects() {
   return (
     <>
-      {/* <FluxedMode /> */}
       <section className="container projects-section">
         <div className="projects-header">
           <h2 className="projects-title">OUR PROJECTS</h2>
@@ -24,8 +23,6 @@ function Projects() {
                 <span className="project-name">{project.title}</span>
                 <span className="project-material">{project.material[0]}</span>
               </div>
-
-              {/* <p className="project-description">{project.description}</p> */}
 
               <Link
                 to={`/project/${project.slug}`}

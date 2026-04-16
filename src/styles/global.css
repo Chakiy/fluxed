@@ -70,8 +70,10 @@ ol {
 }
 
 .container {
-  width: min(100% - 40px, var(--container-max));
+  width: 100%;
+  max-width: 1400px;
   margin-inline: auto;
+  padding-inline: 20px;
   margin-top: 101px;
 }
 

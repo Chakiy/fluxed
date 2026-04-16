@@ -55,6 +55,9 @@
   object-fit: cover;
   display: block;
 }
+.blog-card-image:hover {
+  opacity: 0.7;
+}
 
 .blog-card-meta {
   font-family: "Geist Mono", monospace;

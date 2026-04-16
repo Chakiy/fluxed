@@ -199,7 +199,7 @@ function Work() {
           </Link>
         </div>
 
-        <div className="cta-image">
+        <div className="cta-image container">
           <img src="/images/team.png" alt="team" />
         </div>
       </section>
