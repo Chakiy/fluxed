@@ -17,6 +17,12 @@ export default function Home() {
 
   return (
     <>
+      <div className="home-video-bg">
+        <video className="home-video" autoPlay muted playsInline>
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
+        <div className="home-video-overlay" />
+      </div>
       <header className="headerHome">
         <div className="header-inner">
           <NavLink to="/" className="logo">
@@ -40,10 +46,6 @@ export default function Home() {
           id="floatingCanvas"
           className="floating-canvas"
         />
-
-        <div className="hero-content">
-          <h1>Fluxed Agency</h1>
-        </div>
       </div>
       <div className="footer-gradient-homepage"></div>
     </>
